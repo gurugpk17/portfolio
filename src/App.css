@@ -27,13 +27,30 @@ body {
 }
 
 .Links a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   color: white;
 }
 
-.Links a:hover {
-  text-decoration: underline;
+.Links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -30%;
+  left: 0;
+  background-color: aqua;
+  transform-origin: bottom middle;
+  transition: transform 0.25s ease-out;
 }
+
+.Links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom middle;
+}
+
 
 /* Body page*/
 .Body {
@@ -109,13 +126,13 @@ body {
   height: 39px;
 }
 .twitter{
-  margin-top: -2%;
-  margin-left: -2.5%;
+  margin-top: -13%;  
+  margin-left: -30%;
   height: 50px;
   width: 50px;
 }
 .mail{
-  margin-top: -2%;
+  margin-top: -15%;
   height: 52px;
   width: 50px;
 }
@@ -304,7 +321,6 @@ body {
 
 /* Education page ends */
 
-/* Projects page begins */
 .projects {
   display: flex;
   flex-direction: column;
@@ -326,12 +342,7 @@ body {
   justify-content: center;
   margin-left: 23%;
   margin-top: 3%;
-  gap: 30px;
-}
-
-.project_img {
-  width: 30%;
-  height: auto;
+  gap: 50px;
 }
 
 .weather_app,
@@ -341,17 +352,88 @@ body {
 .twitter_app {
   display: flex;
   flex-direction: row;
+  color: white; 
+  align-items: center; 
+}
+
+.image-container {
+  position: relative;
+  width: 30%;
+  display: inline-block;
+}
+
+.project_img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.text {
   color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
 }
 
 .project_desc {
-  margin-left: 20px; /* Adjust as needed */
-  max-width: 600px; /* Adjust as needed */
+  margin-left: 20px; 
+  max-width: 600px; 
   text-align: justify;
-  text-justify: inter-word;
+  a{
+    color: #D4D4D4;
+    text-decoration: none;
+    cursor: default;
+    font-weight:bolder;
+    font-size:x-large;
+  }
+  p{
+    color: #A3A3AC; 
+    margin-top: 3%;
+    font-size: 15px;
+    font-family:'monospace';
+    line-height: 1.6;
+  }
 }
 
-/* Projects page ends */
+/* @media (max-width: 768px) {
+  .weather_app,
+  .recipe_app,
+  .downloader_app,
+  .flipkart_app,
+  .twitter_app {
+    flex-direction: column;
+  }
+  .image-container {
+    width: 100%;
+  }
+} */
 
 /* Contact page begins */
 .Contact {  
