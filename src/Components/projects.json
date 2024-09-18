@@ -11,28 +11,28 @@
         "ProjectDescription": "The Recipe Search Web Application is a sleek and easy-to-use tool developed with React. Users can effortlessly search for recipes by specifying their desired dish. Powered by the Recipe by API-Ninjas, the app delivers real-time recipe results with comprehensive details. Utilizing React hooks and the Fetch API, it provides a smooth and interactive experience for exploring various recipes.",
         "ProjectImage": "/Images/recepie.png",
         "Project_source_Link": "https://github.com/gurugpk17/recipie-api",
-        "ProjectDemoLink": "https://gurugpk-weather-app.netlify.app/"
+        "ProjectDemoLink": "https://recipie-api.vercel.app/"
     },
     {
         "ProjectName": "Media Downloader Application",
         "ProjectDescription": "The Media Downloader Application is a powerful and versatile tool designed for easy downloading of media content. Built with HTML, CSS, and JavaScript, it allows users to download videos from popular platforms like YouTube, Facebook, and Instagram. The application offers a simple and efficient interface, making it accessible for users to grab their favorite media with just a few clicks.",
         "ProjectImage": "/Images/downloader.jpeg",
         "Project_source_Link": "https://github.com/gurugpk17/media_downloader",
-        "ProjectDemoLink": "https://gurugpk-weather-app.netlify.app/"
+        "ProjectDemoLink": "https://gurugpk-media-downloader.netlify.app/"
     },
     {
         "ProjectName": "Flipkart Static Design",
         "ProjectDescription": "The Flipkart Static Design is a precise and visually accurate recreation of the Flipkart e-commerce platform, developed using React. While this project does not include backend functionality, it meticulously replicates the layout and design elements of the original site, offering a detailed static representation. This project demonstrates the use of React for crafting responsive and aesthetically consistent user interfaces, closely mirroring the look and feel of Flipkart.",
         "ProjectImage": "/Images/flipkart.png",
         "Project_source_Link": "https://github.com/gurugpk17/flipkart-home",
-        "ProjectDemoLink": "https://gurugpk-weather-app.netlify.app/"
+        "ProjectDemoLink": "https://gurugpk-old-home.netlify.app/"
     },
     {
         "ProjectName": "Product list Application",
         "ProjectDescription": "The Product List Application is a practical project built using React, designed to enhance understanding of working with JSON. It features a clean interface where users can view a list of products, demonstrating how to effectively handle and display JSON data within a React application. This project highlights the integration of JSON data to create a dynamic and responsive user experience.",
         "ProjectImage": "/Images/product-list.png",
         "Project_source_Link": "https://github.com/gurugpk17/flipkart-product-list",
-        "ProjectDemoLink": "https://gurugpk-weather-app.netlify.app/"
+        "ProjectDemoLink": "https://gurugpk-product-list.netlify.app/"
     },
     {
         "ProjectName": "Twitter Login page (static)",
